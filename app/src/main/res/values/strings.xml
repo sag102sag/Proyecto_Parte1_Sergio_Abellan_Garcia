@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Proyecto_Parte1_Sergio_Abellan_Garcia</string>
+    <string name="nombreprueba">NombrePrueba</string>
+    <string name="apellidoprueba">ApellidoPrueba</string>
+    <string name="correoprueba">CorreoPrueba</string>
+    <string name="nombre">"Nombre: "</string>
+    <string name="apellido">"Apellido: "</string>
+    <string name="correo_electr_nico">"Correo Electrónico: "</string>
+</resources>

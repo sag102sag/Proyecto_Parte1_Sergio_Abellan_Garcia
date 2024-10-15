@@ -9,4 +9,7 @@
     <string name="realizar_pedido">Realizar pedido</string>
     <string name="listar_pedidos">Listar pedidos</string>
     <string name="n_mero_de_tel_fono">Teléfono: \n</string>
+    <string name="coche">coche</string>
+    <string name="cocheB">Coche</string>
+    <string name="elige_que_quieres_hacer">Elige que quieres hacer:</string>
 </resources>

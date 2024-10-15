@@ -55,22 +55,23 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun PantallaInicial(modifier: Modifier = Modifier)
 {
-  /*  Column (
+    /*
+    Column (
 
         modifier= modifier.fillMaxHeight(),
         verticalArrangement = Arrangement.Top
     ) {
             DatosUsuario()
             Botones()
-    }
+    }*/
 
-   */
-}
-@Composable
-fun Titulo(modifier: Modifier=Modifier)
-{
+    VistaPedidos(
+        modifier = Modifier
+    )
+
 
 }
+
 
 @Composable
 fun DatosUsuario(modifier: Modifier = Modifier) {
@@ -78,7 +79,9 @@ fun DatosUsuario(modifier: Modifier = Modifier) {
     val usuario = datos.CargarUsuario()
     val tamanyoFuente: Int = 18
     Row(
-        Modifier.padding(16.dp).fillMaxWidth(),
+        Modifier
+            .padding(16.dp)
+            .fillMaxWidth(),
         horizontalArrangement = Arrangement.Center
     ) {
         Text(text = "¡Bienvenido de nuevo!")
@@ -99,9 +102,11 @@ fun DatosUsuario(modifier: Modifier = Modifier) {
                     painter = painterResource(usuario.imagenUsuario),
                     contentDescription = "Usuario",
                     modifier = modifier
-                        .padding(top = 25.dp,
+                        .padding(
+                            top = 25.dp,
                             start = 16.dp,
-                            end = 16.dp)
+                            end = 16.dp
+                        )
                         .clip(RoundedCornerShape(25.dp))
                 )
             }
@@ -152,25 +157,36 @@ fun DatosUsuario(modifier: Modifier = Modifier) {
     @Composable
     fun Botones(modifier: Modifier = Modifier) {
         Column(
-            modifier = Modifier.fillMaxWidth().fillMaxHeight().padding(bottom = 70.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .fillMaxHeight()
+                .padding(bottom = 70.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Bottom
         ) {
             Row(
-                Modifier.padding(16.dp).fillMaxWidth(),
+                Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth(),
                 horizontalArrangement = Arrangement.Center
             ) {
-                Text(text = "Elige que quieres hacer:")
+                Text(text = stringResource(R.string.elige_que_quieres_hacer))
             }
             Spacer(modifier.size(20.dp))
-            Button(onClick = {}, modifier.height(60.dp).width(180.dp)) {
+            Button(onClick = {},
+                modifier
+                    .height(60.dp)
+                    .width(180.dp)) {
                 Text(
                     text = stringResource(R.string.realizar_pedido),
                     fontSize = 15.sp
                 )
             }
             Spacer(modifier.size(20.dp))
-            Button(onClick = {}, modifier.height(60.dp).width(180.dp)) {
+            Button(onClick = {},
+                modifier
+                    .height(60.dp)
+                    .width(180.dp)) {
                 Text(
                     stringResource(R.string.listar_pedidos),
                     fontSize = 15.sp

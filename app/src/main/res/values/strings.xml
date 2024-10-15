@@ -5,5 +5,8 @@
     <string name="correoprueba">CorreoPrueba</string>
     <string name="nombre">"Nombre: "</string>
     <string name="apellido">"Apellido: "</string>
-    <string name="correo_electr_nico">"Correo Electrónico: "</string>
+    <string name="correo_electr_nico">"E-Mail: "</string>
+    <string name="realizar_pedido">Realizar pedido</string>
+    <string name="listar_pedidos">Listar pedidos</string>
+    <string name="n_mero_de_tel_fono">Teléfono: \n</string>
 </resources>

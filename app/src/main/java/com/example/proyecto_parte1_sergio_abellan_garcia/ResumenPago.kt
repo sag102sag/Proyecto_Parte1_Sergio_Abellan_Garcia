@@ -75,8 +75,8 @@ fun ResumenMetodoPago(modifier: Modifier = Modifier, metodoPago: MetodoPago)
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(
                     text = stringResource(R.string.tipo_de_tarjeta)+ metodoPago.tarjeta.nombre
-                    +""+ stringResource(R.string.n_mero_de_tarjeta)+ metodoPago.numeroTarjeta
-                    +""+ stringResource(R.string.fecha_de_caducidad)+ metodoPago.fechaCad
+                    +"\n"+ stringResource(R.string.n_mero_de_tarjeta)+ metodoPago.numeroTarjeta
+                    +"\n"+ stringResource(R.string.fecha_de_caducidad)+ metodoPago.fechaCad
                     +"\n"+ stringResource(R.string.cvc)+ metodoPago.cvc,
                     textAlign = TextAlign.Start,
                     modifier = Modifier.padding(start = 25.dp)

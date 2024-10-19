@@ -55,17 +55,17 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun PantallaInicial(modifier: Modifier = Modifier)
 {
-/*
-    Column (
+
+  /*  Column (
 
         modifier= modifier.fillMaxHeight(),
         verticalArrangement = Arrangement.Top
     ) {
         DatosUsuario()
         Botones()
-    }
-*/
-    VistaPedidos(
+    }*/
+
+    VistaResumenPedido(
         modifier = Modifier
     )
 

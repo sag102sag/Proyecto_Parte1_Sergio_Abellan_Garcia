@@ -12,7 +12,7 @@
     <string name="n_mero_de_tel_fono">"Phone number: "</string>
     <string name="coche">car</string>
     <string name="cocheB">Car</string>
-    <string name="elige_que_quieres_hacer">Choose what you whant to do:</string>
+    <string name="elige_que_quieres_hacer">Choose what you want to do:</string>
     <string name="usted_ha_elegido">You have chosen:</string>
     <string name="tu_vehiculo_contar_con_gps">Your vehicle will count with GPS</string>
     <string name="tu_vehiculo_no_contar_con_gps">Your vehicle will not count with GPS</string>
@@ -44,9 +44,9 @@
     <string name="solo_coches">" (Only cars)"</string>
     <string name="pagar">Pay</string>
     <string name="elija_tipo_de_tarjeta">Choose card type</string>
-    <string name="tipo_de_tarjeta">Card type:</string>
-    <string name="n_mero_de_tarjeta">Card number:</string>
-    <string name="fecha_de_caducidad">Expiration date:</string>
+    <string name="tipo_de_tarjeta">Card type: </string>
+    <string name="n_mero_de_tarjeta">Card number: </string>
+    <string name="fecha_de_caducidad">Expiration date: </string>
     <string name="icono_tarjeta">Card Icon</string>
     <string name="enviar">Send</string>
     <string name="elija_veh_culo_a_reservar">Choose a vehicle to place:</string>

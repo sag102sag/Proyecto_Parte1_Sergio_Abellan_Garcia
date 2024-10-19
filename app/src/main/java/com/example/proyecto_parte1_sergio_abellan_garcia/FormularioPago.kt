@@ -159,10 +159,10 @@ fun FormularioTarjeta(modifier: Modifier=Modifier, tarjetas: List<Tarjeta>)
         Row(Modifier.fillMaxWidth().padding(25.dp), horizontalArrangement = Arrangement.Center) {
             Text(
                 text = stringResource(R.string.tipo_de_tarjeta) +tarjetaElegida
-                        + stringResource(R.string.n_mero_de_tarjeta) + numeroTarjeta
-                        + stringResource(R.string.fecha_de_caducidad) + fechaCaducidad
+                        + "\n"+stringResource(R.string.n_mero_de_tarjeta) + numeroTarjeta
+                        + "\n"+stringResource(R.string.fecha_de_caducidad) + fechaCaducidad
                         + "\n"+stringResource(R.string.cvc) + cvc,
-                textAlign = TextAlign.Center
+                textAlign = TextAlign.Start
             )
         }
         Row(Modifier.fillMaxWidth().padding(25.dp), horizontalArrangement = Arrangement.Center) {

@@ -51,4 +51,7 @@
     <string name="cvc" translatable="false">"CVC: "</string>
     <string name="icono_tarjeta">Icono tarjeta</string>
     <string name="enviar">Enviar</string>
+    <string name="elija_veh_culo_a_reservar">Elija vehículo a reservar</string>
+    <string name="reserva_realizada">"Reserva realizada: "</string>
+    <string name="elige_el_tipo_de_combustible">Elige el tipo de combustible:</string>
 </resources>

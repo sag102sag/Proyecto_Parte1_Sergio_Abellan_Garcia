@@ -65,7 +65,7 @@ fun PantallaInicial(modifier: Modifier = Modifier)
         Botones()
     }
 */
-    VistaResumenPago(
+    VistaPedidos(
         modifier = Modifier
     )
 

@@ -49,4 +49,7 @@
     <string name="fecha_de_caducidad">Expiration date:</string>
     <string name="icono_tarjeta">Card Icon</string>
     <string name="enviar">Send</string>
+    <string name="elija_veh_culo_a_reservar">Choose a vehicle to place:</string>
+    <string name="reserva_realizada">"Order made: "</string>
+    <string name="elige_el_tipo_de_combustible">Elige el tipo de combustible:</string>
 </resources>

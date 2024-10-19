@@ -69,7 +69,7 @@ fun ListaVehiculos(lista: List<Vehiculo>, modifier: Modifier = Modifier)
     {
         Column(horizontalAlignment = Alignment.CenterHorizontally)
         {
-            Text(text = "Elija vehículo a reservar", textAlign = TextAlign.Center)
+            Text(text = stringResource(R.string.elija_veh_culo_a_reservar), textAlign = TextAlign.Center)
 
             Spacer(modifier.size(16.dp))
 
@@ -89,6 +89,12 @@ fun TarjetaVehiculo(vehiculo: Vehiculo, modifier: Modifier = Modifier)
     var mostrar by remember { mutableStateOf(false) }
     var tipoVehiculo by remember{ mutableStateOf("") }
     var contador by remember { mutableStateOf(0) }
+    val text = when (vehiculo.tipo)
+    {
+        "Coche"-> R.string.cocheB
+        "Moto"-> R.string.moto
+        else->R.string.patinete
+    }
     Card (modifier = modifier
         .width(300.dp)
         .clickable {
@@ -109,7 +115,7 @@ fun TarjetaVehiculo(vehiculo: Vehiculo, modifier: Modifier = Modifier)
 
                 )
                 Text(
-                    text = vehiculo.tipo,
+                    text = stringResource(text),
                     modifier = Modifier
                         .align(Alignment.Center)
                         .padding(8.dp),
@@ -159,7 +165,7 @@ var precioFinal by remember { mutableStateOf(0.0) }
         Column {
             Row (modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
                 Text(
-                    text = "Elige el tipo de combustible:",
+                    text = stringResource(R.string.elige_el_tipo_de_combustible),
                     modifier = Modifier.padding(16.dp)
                 )
 
@@ -477,7 +483,7 @@ fun MuestraBotones (modifier: Modifier = Modifier,
         }
         Column(modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
             Text(
-                text =   "Reserva realizada: ",
+                text = stringResource(R.string.reserva_realizada),
                 textAlign = TextAlign.Center
             )
             Text(

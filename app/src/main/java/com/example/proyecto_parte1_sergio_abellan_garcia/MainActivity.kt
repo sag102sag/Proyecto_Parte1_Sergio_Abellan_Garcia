@@ -56,18 +56,18 @@ class MainActivity : ComponentActivity() {
 fun PantallaInicial(modifier: Modifier = Modifier)
 {
 
-  /*  Column (
+ Column (
 
         modifier= modifier.fillMaxHeight(),
         verticalArrangement = Arrangement.Top
     ) {
         DatosUsuario()
         Botones()
-    }*/
+    }
 
-    VistaResumenPedido(
+    /*VistaListaPedidos(
         modifier = Modifier
-    )
+    )*/
 
 
 }
